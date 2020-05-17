@@ -1,24 +1,32 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-    <b-button>Click</b-button>
+  <div class="wrapper">
+    <main-header></main-header>
+    <main>
+      <b-container class="my-4">
+        <slot />
+      </b-container>
+    </main>
+    <main-footer></main-footer>
   </div>
 </template>
 
 <script>
-import { BButton } from 'bootstrap-vue'
+import { BButton, BContainer } from 'bootstrap-vue'
+import MainHeader from '~/components/MainHeader'
+import MainFooter from '~/components/MainFooter'
+
 export default {
+  name: 'DefaultLayout',
+  metaInfo: {
+    meta: [
+      { name: 'description', content: 'Jobs' }
+    ]
+  },
   components: {
-    BButton
+    BButton,
+    BContainer,
+    MainHeader,
+    MainFooter
   }
 }
 </script>
@@ -32,29 +40,4 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>
