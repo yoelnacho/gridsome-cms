@@ -10,8 +10,18 @@
       </nav>
     </header>
     <slot/>
+    <b-button>Click</b-button>
   </div>
 </template>
+
+<script>
+import { BButton } from 'bootstrap-vue'
+export default {
+  components: {
+    BButton
+  }
+}
+</script>
 
 <static-query>
 query {
