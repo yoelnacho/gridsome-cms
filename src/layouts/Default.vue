@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="wrapper">
     <main-header></main-header>
-    <div class="main">
-      <div class="main-container">
+    <main>
+      <b-container class="my-4">
         <slot />
-      </div>
-    </div>
+      </b-container>
+    </main>
     <main-footer></main-footer>
   </div>
 </template>
 
 <script>
-import { BButton } from 'bootstrap-vue'
+import { BButton, BContainer } from 'bootstrap-vue'
 import MainHeader from '~/components/MainHeader'
 import MainFooter from '~/components/MainFooter'
 
@@ -24,6 +24,7 @@ export default {
   },
   components: {
     BButton,
+    BContainer,
     MainHeader,
     MainFooter
   }
