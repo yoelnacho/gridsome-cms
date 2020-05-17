@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+/*************/
+/* GENERALES */
+/*************/
+
+:root {
+  --ceg-verde-claro: #009862;
+  --ceg-verde: #00713D;
+  --ceg-verde-oscuro: #00411D;
+  --ceg-gris-claro: #F2F2F2;
+  --ceg-gris: #706F6F;
+  --ceg-gris-oscuro: #424040;
+}
+
+* {
+  transition: all 0.3s;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--ceg-gris-oscuro);
+}
