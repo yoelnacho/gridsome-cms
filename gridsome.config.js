@@ -6,5 +6,24 @@
 
 module.exports = {
   siteName: 'Jobs',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Jobs',
+        path: './content/jobs/**/*.md',
+        remark: {
+          // remark options
+        }
+      }
+    }
+  ],
+  templates: {
+    Jobs: '/jobs/:slug'
+  },
+  transformers: {
+    remark: {
+      // global remark options
+    }
+  }
 }
