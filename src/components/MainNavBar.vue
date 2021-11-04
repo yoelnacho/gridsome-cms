@@ -9,11 +9,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Jobs <span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <g-link class="nav-link" to="/">Inicio <span class="sr-only"></span></g-link>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">Áreas</a>
+                    <li v-show="false" class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            data-hover="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >Áreas</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Sistemas</a>
                             <a class="dropdown-item" href="#">Recursos Humanos</a>
@@ -25,23 +34,35 @@
                             <a class="dropdown-item" href="#">Desarrollo de Producto</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">Países</a>
+                    <li v-show="false" class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            data-hover="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >Países</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Argentina</a>
                             <a class="dropdown-item" href="#">México</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Qué Buscamos</a>
+                        <g-link class="nav-link" to="/what">Qué Buscamos?</g-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cómo Trabajamos</a>
+                        <g-link class="nav-link" to="/how">Cómo Trabajamos?</g-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-profile" href="#">
+                        <g-link class="nav-link" to="/blog/post-one">Blog</g-link>
+                    </li>
+                    <li class="nav-item ">
+                        <g-link class="nav-link nav-link-profile" to="/profile">
                             <g-image alt="perfil" src="~/assets/icons/person.svg" class="ico-perfil" /> Ver perfil
-                        </a>
+                        </g-link>
                     </li>
                 </ul>
             </div>

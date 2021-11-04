@@ -1,5 +1,18 @@
 <template>
-  <Layout>
+  <Blog>
     <h1>Text 1</h1>
-  </Layout>
+  </Blog>
 </template>
+
+<script>
+import Blog from '~/layouts/Blog'
+
+export default {
+  metaInfo: {
+    title: 'Blog'
+  },
+  components: {
+    Blog
+  }
+}
+</script>

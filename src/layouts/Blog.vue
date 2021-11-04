@@ -6,7 +6,7 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
+        <g-link class="nav__link" to="/">About</g-link>
         <g-link class="nav__link" to="/team">Team</g-link>
       </nav>
     </header>
@@ -18,7 +18,7 @@
 <script>
 import { BButton } from 'bootstrap-vue'
 export default {
-  name: 'DefaultLayout',
+  name: 'BlogLayout',
   metaInfo: {
     meta: [
       { name: 'description', content: 'Jobs' }

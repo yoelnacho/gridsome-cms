@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" :data-name="$static.metadata.siteName">
     <main-header></main-header>
     <main>
       <b-container class="my-4">

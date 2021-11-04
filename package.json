@@ -1,5 +1,5 @@
 {
-  "name": "jobs-ssr",
+  "name": "gridsome-cms",
   "private": true,
   "scripts": {
     "build": "gridsome build",
